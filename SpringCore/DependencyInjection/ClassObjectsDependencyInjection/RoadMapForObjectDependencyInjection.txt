@@ -1,0 +1,12 @@
+Class Object dependency injection using xml approach :- 
+
+Car :- methods  - StartEngine(),  stopCar()
+DriverA :- Object of Car,drive()
+
+DriverB :- Object of Car,drive()
+
+CallDriver :- calls the DriverA and B class.
+
+
+
+
