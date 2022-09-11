@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<context:annotation-config></context:annotation-config>
+<context:property-placeholder location="classpath:StudentInfo.properties"/>
+
+<bean id="DBClass" class ="com.daxasoft.util.DBConnection">
+
+<!-- Injecting values using property Tag's from the properties file -->
+<!-- 	<property name="driverClass" value="${student.driverClass}"/>
+	<property name="URL" value="${student.URL}"/>
+	<property name ="userName" value="${student.userName}"/>
+	<property name="password"  value="${student.password}" /> -->
+
+</bean>
+
+</beans>
