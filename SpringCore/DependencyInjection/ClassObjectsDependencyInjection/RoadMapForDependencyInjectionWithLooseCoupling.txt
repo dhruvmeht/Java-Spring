@@ -1,0 +1,8 @@
+With this scenario, we are trying to acheive loose coupling among injecting dependency Objects. By Configuring Interfaces  for the dependent classes. 
+
+In this scenario, we will consider the example of the Driver class that is dependent on the Car interface, either for Driving the Petrol class car object or Diesel Class car object.Whatever options does the driver uses, he just has to make the changes to the beans.xml file. And no where on the Program there will be a change , Thereby avoiding the change in the code. 
+
+
+
+
+

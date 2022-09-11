@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+ <context:annotation-config></context:annotation-config>
+ <bean id ="javadept" class="com.daxasoft.bean.Department" >
+ <property name="deptName" value="Java Development" />
+ </bean>
+  <bean id ="middlewaredept" class="com.daxasoft.bean.Department" >
+ <property name="deptName" value="MiddlewareAdmin" />
+ </bean>
+ 
+ <!-- Dependency on Basis of ByType -->
+<!-- <bean id="emp" class="com.daxasoft.bean.Employee" autowire="byType"> -->
+<!-- Dependency on the basis of constructor  -->
+
+<bean id="emp" class="com.daxasoft.bean.Employee" >
+<property name="empName" value="Dhruv"/>
+<property name="empAddress" value="Mumbai" />
+
+</bean>
+
+
+</beans>

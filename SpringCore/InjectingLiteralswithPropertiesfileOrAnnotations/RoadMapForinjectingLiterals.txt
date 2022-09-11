@@ -1,0 +1,13 @@
+Scenario :- 
+
+-> Create the Beans configuration file for creating bean objects - Beans.xml
+
+-> Create the properties for configuring all the values of the literals - DB connection properties.
+
+-> Bean class - DBConnection Class having properties as :-
+		1.) DriverClassName 
+		2.) URL 
+		3.) Username 
+		4.) Password 
+	-> Method -> to Display the values of all the properties.
+			-> Initialize connection to the Database and end. 	

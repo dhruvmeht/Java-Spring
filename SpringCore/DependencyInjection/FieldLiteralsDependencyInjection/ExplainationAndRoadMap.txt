@@ -1,0 +1,25 @@
+Spring Dependency Injection for Literals :- 
+
+Dependency injection can be done in two ways(via xml approach) :- 
+
+1.) Setter Injection
+Setter injection takes place when IOC container at the time of loading the beans.xml file finds the property tag. It searches out for the setter method for that appropriate literal/Property/field variable. 
+
+2.) Constructor injection 
+Constructor Injection takes place when IOC container at the time of loading the beans.xml file finds the constructor-args tag. At the time of creating a bean, IOC container will search for the appropriate constructor containing the required field arguments. 
+Note :- By Default the Data Type of the Constructor-arg/property field value is String. Spring framework internally calls its conversion method to convert the data type based on the defined constructor parameters. 
+
+
+Road Map :- 
+
+Engine - Its an interface containing two methods startEngine() and driverCar()
+
+PetrolEngine - Its an implementation class to Engine Interface, overriding the methods of the interface.
+		It will have two fields called manufacturer and EngineHorsePower.
+
+DieselEngine - Its an implementation class to Engine Interface, overriding the methods of the interface.
+		It will have two fields called manufacturer and EngineHorsePower.
+
+TestDrive - Its a main method class which will rely on the spring beans to call its appropriate methods. 
+
+
